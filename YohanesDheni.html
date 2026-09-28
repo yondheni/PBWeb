@@ -7,11 +7,20 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header">
-      <h1>Profil Diri dan Kepribadian</h1>
-      <p>Yohanes Dheni - Mahasiswa Informatika</p>
+      <div class="header-content">
+        <p class="header-small">PEMROGRAMAN BERBASIS WEB</p>
+
+        <h1>PROFIL DIRI DAN KEPRIBADIAN</h1>
+
+        <p class="header-subtitle">YOHANES DHENI PRASETYO - INFORMATIKA</p>
+      </div>
+
+      <div class="badge">Tugas 2</div>
     </header>
 
+    <!-- Navigasi -->
     <nav>
       <a href="#profil">Profil</a>
       <a href="#kepribadian">Kepribadian</a>
@@ -20,34 +29,66 @@
     </nav>
 
     <main>
-      <section id="profil" class="hero">
-        <h2>Perkenalan Diri</h2>
+      <!-- Profil Diri -->
+      <section id="profil" class="profile-layout">
+        <div class="profile-content">
+          <h2>Perkenalan Diri</h2>
 
-        <p>
-          Halo! Perkenalkan, nama saya <b>Yohanes Dheni</b>, mahasiswa dengan
-          NIM 255314142 di Universitas Sanata Dharma. Saat ini saya sedang
-          menempuh pendidikan di bidang Teknologi Informasi dan sedang mengikuti
-          mata kuliah <b>Pemrograman Web</b>.
-        </p>
+          <p>
+            Halo! Perkenalkan, nama saya
+            <b>Yohanes Dheni Prasetyo</b>, mahasiswa dengan NIM 255314142 di
+            Universitas Sanata Dharma. Saat ini saya sedang menempuh pendidikan
+            di bidang Teknologi Informasi dan sedang mengikuti mata kuliah
+            <b>Pemrograman Web</b>.
+          </p>
 
-        <p>
-          Saya adalah orang yang cukup
-          <i
-            >tenang, suka mencoba hal baru, dan senang belajar dari
-            pengalaman</i
-          >. Saya juga berusaha untuk menjadi seseorang yang dapat bertanggung
-          jawab terhadap apa yang sudah saya mulai.
-        </p>
+          <p>
+            Saya adalah orang yang cukup
+            <i>
+              tenang, suka mencoba hal baru, dan senang belajar dari pengalaman </i
+            >. Saya juga berusaha untuk menjadi seseorang yang dapat bertanggung
+            jawab terhadap apa yang sudah saya mulai.
+          </p>
 
-        <p>
-          Dalam belajar, saya terkadang membutuhkan waktu untuk memahami
-          sesuatu, tetapi saya berusaha untuk tetap
-          <span class="highlight"><b>tidak mudah menyerah</b></span
-          >. Menurut saya, setiap kesulitan merupakan kesempatan untuk belajar
-          dan menjadi lebih baik.
-        </p>
+          <p>
+            Dalam belajar, saya terkadang membutuhkan waktu untuk memahami
+            sesuatu, tetapi saya berusaha untuk tetap
+            <span class="highlight">
+              <b>tidak mudah menyerah</b> </span
+            >. Menurut saya, setiap kesulitan merupakan kesempatan untuk belajar
+            dan menjadi lebih baik.
+          </p>
+        </div>
+
+        <!-- Identitas -->
+        <aside class="identity-card">
+          <p class="identity-label">IDENTITAS</p>
+
+          <h2>
+            Yohanes<br />
+            Dheni Prasetyo
+          </h2>
+
+          <div class="identity-line"></div>
+
+          <div class="identity-data">
+            <span>NIM</span>
+            <b>255314142</b>
+          </div>
+
+          <div class="identity-data">
+            <span>JURUSAN</span>
+            <b>Informatika</b>
+          </div>
+
+          <div class="identity-data">
+            <span>UNIVERSITAS</span>
+            <b>Universitas Sanata Dharma</b>
+          </div>
+        </aside>
       </section>
 
+      <!-- Kepribadian -->
       <section id="kepribadian" class="card">
         <h2>Tentang Kepribadian Saya</h2>
 
@@ -60,7 +101,7 @@
 
         <p>Beberapa hal yang menurut saya menggambarkan diri saya:</p>
 
-        <ul>
+        <ul class="bullet-list">
           <li>Suka mempelajari hal-hal baru.</li>
           <li>Berusaha bertanggung jawab terhadap tugas.</li>
           <li>Menghargai pendapat orang lain.</li>
@@ -69,72 +110,96 @@
         </ul>
       </section>
 
-      <section class="card-grid">
+      <!-- Kelebihan dan Kekurangan -->
+      <section class="two-column">
         <div class="card">
-          <h2>Kelebihan dan Kekurangan</h2>
+          <h2>Kelebihan</h2>
 
-          <table>
-            <tr>
-              <th>Kelebihan</th>
-              <th>Kekurangan</th>
-            </tr>
-
-            <tr>
-              <td>Mau belajar hal baru</td>
-              <td>Terkadang kurang percaya diri</td>
-            </tr>
-
-            <tr>
-              <td>Mau menerima kritik dan saran</td>
-              <td>Terkadang terlalu banyak berpikir</td>
-            </tr>
-
-            <tr>
-              <td>Bertanggung jawab terhadap tugas</td>
-              <td>Masih perlu meningkatkan konsistensi</td>
-            </tr>
-          </table>
+          <ul class="simple-list">
+            <li>Mau belajar hal baru</li>
+            <li>Mau menerima kritik dan saran</li>
+            <li>Bertanggung jawab terhadap tugas</li>
+            <li>Suka mencoba dan mengeksplorasi sesuatu</li>
+          </ul>
         </div>
 
         <div class="card">
-          <h2>Minat dan Tujuan</h2>
+          <h2>Kekurangan</h2>
 
-          <p>
-            Saya memiliki minat terhadap dunia teknologi, terutama dalam bidang
-            pemrograman dan pembuatan website. Saya tertarik mempelajari
-            bagaimana sebuah website dapat dibuat mulai dari struktur HTML,
-            tampilan dengan CSS, hingga interaksi menggunakan JavaScript.
-          </p>
-
-          <p>
-            Ke depannya, saya ingin memiliki kemampuan pemrograman yang lebih
-            baik dan dapat membuat proyek sendiri. Saya juga ingin terus
-            mengembangkan diri melalui pengalaman selama kuliah.
-          </p>
+          <ul class="simple-list">
+            <li>Terkadang kurang percaya diri</li>
+            <li>Terkadang terlalu banyak berpikir</li>
+            <li>Masih perlu meningkatkan konsistensi</li>
+          </ul>
         </div>
       </section>
 
+      <!-- Minat dan Tujuan -->
+      <section class="card">
+        <h2>Minat dan Tujuan</h2>
+
+        <div class="interest-grid">
+          <div class="interest-box">
+            <h3>Pemrograman</h3>
+
+            <p>
+              Saya memiliki minat terhadap dunia teknologi, terutama dalam
+              bidang pemrograman dan pembuatan website.
+            </p>
+          </div>
+
+          <div class="interest-box">
+            <h3>Pengembangan Diri</h3>
+
+            <p>
+              Saya ingin terus mengembangkan kemampuan melalui pengalaman selama
+              kuliah dan berbagai proyek yang saya kerjakan.
+            </p>
+          </div>
+
+          <div class="interest-box">
+            <h3>Tujuan</h3>
+
+            <p>
+              Ke depannya, saya ingin memiliki kemampuan pemrograman yang lebih
+              baik dan dapat membuat proyek sendiri.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pendidikan -->
       <section id="pendidikan" class="card university">
-        <h2>Tentang Universitas Sanata Dharma</h2>
+        <div class="university-top">
+          <!-- Logo Universitas dapat diklik -->
+          <a href="https://www.usd.ac.id" target="_blank">
+            <img
+              class="university-logo"
+              src="https://www.usd.ac.id/assets/img/KopUSD.png"
+              alt="Logo Universitas Sanata Dharma"
+            />
+          </a>
 
-        <p>
-          Saya saat ini sedang menempuh pendidikan di
-          <b>Universitas Sanata Dharma</b>, Yogyakarta. Saya memilih universitas
-          ini sebagai tempat untuk melanjutkan pendidikan dan mengembangkan
-          kemampuan saya, khususnya di bidang teknologi.
-        </p>
+          <h2>Tentang Kuliah</h2>
+        </div>
 
-        <img
-          src="https://www.usd.ac.id/assets/img/KopUSD.png"
-          alt="Logo Universitas Sanata Dharma"
-          width="300"
-        />
+        <div class="university-content">
+          <p>
+            Saya saat ini sedang menempuh pendidikan di
+            <b>Universitas Sanata Dharma</b>, Yogyakarta. Saya memilih
+            universitas ini sebagai tempat untuk melanjutkan pendidikan dan
+            mengembangkan kemampuan saya, khususnya di bidang teknologi.
+          </p>
 
-        <br />
-
-        <a href="https://www.usd.ac.id"> Website Universitas Sanata Dharma </a>
+          <p>
+            Selama berkuliah, saya mendapatkan kesempatan untuk mempelajari
+            berbagai hal yang berkaitan dengan teknologi informasi dan
+            pemrograman.
+          </p>
+        </div>
       </section>
 
+      <!-- Pengembangan Diri -->
       <section class="card">
         <h2>Rencana Pengembangan Diri</h2>
 
@@ -143,7 +208,7 @@
           yang ingin saya lakukan:
         </p>
 
-        <ol>
+        <ol class="number-list">
           <li>Lebih rajin belajar dan berlatih.</li>
           <li>Berani mencoba hal-hal baru.</li>
           <li>Meningkatkan rasa percaya diri.</li>
@@ -152,30 +217,34 @@
         </ol>
       </section>
 
+      <!-- Data Diri -->
       <section class="card">
         <h2>Data Saya</h2>
 
-        <table>
-          <tr>
-            <th>Nama</th>
-            <th>NIM</th>
-            <th>Universitas</th>
-            <th>Jurusan</th>
-            <th>Mata Kuliah</th>
-          </tr>
+        <div class="table-wrapper">
+          <table>
+            <tr>
+              <th>Nama</th>
+              <th>NIM</th>
+              <th>Universitas</th>
+              <th>Jurusan</th>
+              <th>Mata Kuliah</th>
+            </tr>
 
-          <tr>
-            <td>Yohanes Dheni Prasetyo</td>
-            <td>255314142</td>
-            <td>Universitas Sanata Dharma</td>
-            <td>Informatika</td>
-            <td>Pemrograman Web</td>
-          </tr>
-        </table>
+            <tr>
+              <td>Yohanes Dheni Prasetyo</td>
+              <td>255314142</td>
+              <td>Universitas Sanata Dharma</td>
+              <td>Informatika</td>
+              <td>Pemrograman Web</td>
+            </tr>
+          </table>
+        </div>
       </section>
 
+      <!-- Media Sosial -->
       <section id="sosial" class="card social">
-        <h2>Media Sosial Saya</h2>
+        <h2>Media Sosial</h2>
 
         <p>
           Selain melalui kegiatan perkuliahan, saya juga menggunakan media
@@ -183,19 +252,27 @@
           sehari-hari.
         </p>
 
-        <a href="https://www.instagram.com/yondheni">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            alt="Logo Instagram"
-            width="60"
-          />
-        </a>
+        <!-- Logo dan username Instagram -->
+        <div class="instagram-container">
+          <a href="https://www.instagram.com/yondheni" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Logo Instagram"
+              class="instagram-logo"
+            />
+          </a>
 
-        <br />
-
-        <a href="https://www.instagram.com/yondheni"> Instagram @yondheni </a>
+          <a
+            class="instagram-link"
+            href="https://www.instagram.com/yondheni"
+            target="_blank"
+          >
+            @yondheni
+          </a>
+        </div>
       </section>
 
+      <!-- Harapan -->
       <section class="card">
         <h2>Harapan</h2>
 
@@ -204,16 +281,17 @@
           jalani, saya dapat menjadi pribadi yang lebih percaya diri,
           bertanggung jawab, dan memiliki kemampuan yang berguna untuk masa
           depan.
-          <b
-            >Perjalanan untuk berkembang masih panjang, tetapi saya akan terus
-            belajar dan mencoba.</b
-          >
+          <b>
+            Perjalanan untuk berkembang masih panjang, tetapi saya akan terus
+            belajar dan mencoba.
+          </b>
         </p>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2026 Yohanes Dheni - Pemrograman Web</p>
+      <p>&copy; 2026 Yohanes Dheni P - Pemrograman Berbasis Web</p>
     </footer>
   </body>
 </html>
