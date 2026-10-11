@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Preferensi Makanan</title>
+    <link rel="stylesheet" href="tugas 4 dheni.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">FORMULIR DIGITAL</div>
+      <h1>Formulir Preferensi</h1>
+      <p>Ceritakan makanan dan minuman favoritmu.</p>
+    </header>
+
+    <main>
+      <section class="formulir">
+        <div class="judul-form">
+          <span class="nomor">01</span>
+          <div>
+            <h2>Data Pengisi</h2>
+            <p>Masukkan nama dan jumlah opsi yang ingin kamu isi.</p>
+          </div>
+        </div>
+
+        <label for="nama">Nama lengkap</label>
+        <input type="text" id="nama" placeholder="Tuliskan nama lengkap" />
+
+        <label for="jumlah">Jumlah makanan atau minuman</label>
+        <input
+          type="number"
+          id="jumlah"
+          min="1"
+          max="10"
+          step="1"
+          placeholder="Masukkan angka 1–10"
+        />
+
+        <p id="pesanAwal" class="pesan"></p>
+        <button type="button" id="btnNama">Buat Formulir</button>
+      </section>
+
+      <section id="bagianPilihan" class="formulir sembunyi">
+        <div class="judul-form">
+          <span class="nomor">02</span>
+          <div>
+            <h2>Daftar Makanan dan Minuman</h2>
+            <p>Masukkan nama makanan atau minuman yang kamu sukai.</p>
+          </div>
+        </div>
+
+        <div id="inputPilihan"></div>
+
+        <p id="pesanPilihan" class="pesan"></p>
+        <button type="button" id="btnPilihan">Simpan Daftar</button>
+      </section>
+
+      <section id="bagianMetode" class="formulir sembunyi">
+        <div class="judul-form">
+          <span class="nomor">03</span>
+          <div>
+            <h2>Preferensi Makanan dan Minuman</h2>
+            <p>Pilih sesuai selera kamu.</p>
+          </div>
+        </div>
+
+        <div class="pertanyaan">
+          <h3>Makanan atau minuman yang kamu sukai</h3>
+          <p>Tentukan satu pilihan yang paling kamu sukai.</p>
+          <div id="radioPilihan"></div>
+        </div>
+
+        <div class="pertanyaan">
+          <h3>Makanan atau minuman favorit lainnya</h3>
+          <p>Kamu boleh memilih lebih dari satu pilihan.</p>
+          <div id="checkboxPilihan"></div>
+        </div>
+
+        <div class="pertanyaan">
+          <h3>Pilihan makanan atau minuman dari daftar</h3>
+          <p>Pilih satu pilihan melalui daftar berikut.</p>
+
+          <label for="dropdownPilihan">Daftar favorit</label>
+          <select id="dropdownPilihan">
+            <option value="">Pilih makanan atau minuman</option>
+          </select>
+        </div>
+
+        <p id="pesanMetode" class="pesan"></p>
+        <button type="button" id="btnMetode">Lanjutkan</button>
+      </section>
+
+      <section id="bagianEmail" class="formulir sembunyi">
+        <div class="judul-form">
+          <span class="nomor">04</span>
+          <div>
+            <h2>Informasi Kontak</h2>
+            <p>Masukkan alamat email dengan format yang benar.</p>
+          </div>
+        </div>
+
+        <label for="email">Alamat email</label>
+        <input type="text" id="email" placeholder="nama@email.com" />
+
+        <p id="pesanEmail" class="pesan"></p>
+        <button type="button" id="btnEmail">Kirim Formulir</button>
+      </section>
+
+      <section id="bagianHasil" class="formulir sembunyi">
+        <div class="judul-form">
+          <span class="nomor">05</span>
+          <div>
+            <h2>Ringkasan Jawaban</h2>
+            <p>Berikut ringkasan preferensi makanan dan minumanmu.</p>
+          </div>
+        </div>
+
+        <div id="hasil"></div>
+        <button type="button" id="btnUlang" class="tombol-sekunder">
+          Isi Ulang Formulir
+        </button>
+      </section>
+
+      <section class="identitas">
+        <h2>Informasi Mahasiswa</h2>
+        <p>
+          Yohanes Dheni Prasetyo <span>|</span> 255314142
+          <span>|</span> Informatika
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Pemrograman Berbasis Web</p>
+      <p>· 2026 ·</p>
+    </footer>
+
+    <script src="tugas 4 dheni.js"></script>
+  </body>
+</html>
