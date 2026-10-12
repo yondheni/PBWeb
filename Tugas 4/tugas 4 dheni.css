@@ -18,3 +18,248 @@ header {
   padding: 42px 20px;
   border-bottom: 5px solid #8eb7eb;
 }
+
+.logo {
+  color: #b9d5f8;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #d5e2f3;
+}
+
+main {
+  width: 92%;
+  max-width: 720px;
+  margin: 30px auto;
+}
+
+.formulir {
+  background-color: white;
+  border: 1px solid #dce4ef;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 14px rgba(20, 43, 74, 0.05);
+}
+
+.judul-form {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e3eaf3;
+}
+
+.nomor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 8px;
+  background-color: #e5eefb;
+  color: #234d7d;
+  font-weight: bold;
+}
+
+.judul-form h2 {
+  color: #142b4a;
+  font-size: 21px;
+}
+
+.judul-form p {
+  color: #718096;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: white;
+  color: #27364b;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #c3dafa;
+  border-color: #234d7d;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 18px;
+  background-color: #234d7d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #142b4a;
+}
+
+.tombol-sekunder {
+  background-color: #64748b;
+}
+
+.tombol-sekunder:hover {
+  background-color: #475569;
+}
+
+.pertanyaan {
+  background-color: #f7f9fd;
+  border: 1px solid #dfe7f2;
+  border-radius: 8px;
+  padding: 17px;
+  margin-bottom: 17px;
+}
+
+.pertanyaan h3 {
+  color: #142b4a;
+  font-size: 17px;
+}
+
+.pertanyaan p {
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.opsi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-weight: normal;
+  overflow-wrap: anywhere;
+}
+
+.opsi input {
+  flex-shrink: 0;
+}
+
+.input-pilihan {
+  margin-bottom: 12px;
+}
+
+.pesan {
+  color: #b42318;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.sembunyi {
+  display: none;
+}
+
+#hasil {
+  background-color: #f7f9fd;
+  border: 1px solid #dfe7f2;
+  border-radius: 8px;
+  padding: 18px;
+  overflow-wrap: anywhere;
+}
+
+#hasil p {
+  margin-bottom: 10px;
+}
+
+#hasil ul {
+  padding-left: 23px;
+  margin: 8px 0 15px;
+}
+
+#hasil strong {
+  color: #142b4a;
+}
+
+/* Informasi mahasiswa dibuat kecil di bagian bawah. */
+.identitas {
+  background-color: #e8eef7;
+  border: 1px solid #d6e0ed;
+  border-radius: 7px;
+  padding: 10px 15px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.identitas h2 {
+  color: #405675;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.identitas p {
+  color: #52647d;
+  font-size: 12px;
+}
+
+.identitas span {
+  color: #9aa9bd;
+  margin: 0 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  background-color: #e6ecf5;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    padding: 32px 16px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  main {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  .formulir {
+    padding: 18px;
+  }
+
+  .judul-form h2 {
+    font-size: 18px;
+  }
+
+  .identitas p {
+    line-height: 1.9;
+  }
+}
